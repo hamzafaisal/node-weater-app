@@ -1,0 +1,23 @@
+{{>header}}
+<div class="container my-5">
+  <h1>{{title}}</h1>
+
+
+  <form class="form-group col-10 offset-1 col-sm-6 offset-sm-3">
+    <hr>
+    <label for="location">Search the location for the weather!</label>
+    <input type="text" name="location" class="form-control location" placeholder="search for location...">
+    <button type="submit" class="btn btn-secondary mt-2 btn-sm ">Search</button>
+  </form>
+
+  <div class="load col-10 offset-1 col-sm-6 offset-sm-3">
+
+    <hr>
+    <h5 class="result2">
+
+    </h5>
+    <h5 class="result"></h5>
+  </div>
+
+  {{>footer}}
+</div>

@@ -6,7 +6,7 @@ geocode = (address, callback) => {
     encodeURIComponent(address) +
     ".json?access_token=pk.eyJ1IjoiamVycnlmYXlzYWwiLCJhIjoiY2sxNGoyMzZlMGl4aDNjcHlla2JpcWlkYSJ9.lacKVkSdd_D3AHwa6-4u8g&limit=1";
 
-  request(mapUrl, (error, { body }) => {
+  request(mapUrl, (error, respone, body) => {
     if (error) {
       callback("something went wrong", undefined);
     } else {

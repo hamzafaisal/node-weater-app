@@ -36,11 +36,10 @@ app.get("/weather", (req, res) => {
       functions.forecast(data[0], data[1], (error, data2) => {
         res.send({
           title: "Weather Report",
-          forecast: `It is currently ${
+          forecast: `${data2.hourly.summary}. It is currently ${
             data2.currently.temperature
-          } degrees in ${data[2]} with ${
-            data2.currently.precipProbability
-          }% chances of rain`,
+          } degrees in ${data[2]} with ${data2.currently.precipProbability *
+            1000}% chances of rain`,
           location: data[2]
         });
       });

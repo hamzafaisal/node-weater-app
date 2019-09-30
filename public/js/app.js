@@ -11,7 +11,7 @@ form.addEventListener("submit", e => {
     '<div class="spinner-border text-secondary" role="status"></div>';
 
   if (value) {
-    fetch("http://localhost:3000/weather?location=" + value).then(result => {
+    fetch("/weather?location=" + value).then(result => {
       result.json().then(data => {
         form.reset();
         print(data);

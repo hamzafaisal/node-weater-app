@@ -18,7 +18,7 @@ form.addEventListener("submit", e => {
       });
     });
   } else {
-    console.log("Search Location Reqired!");
+    result2.textContent = "Search Location Reqired!";
   }
 });
 
